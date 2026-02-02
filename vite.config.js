@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base:'/vibecode-MemoryGame',
+  base:'/vibecode-MemoryGame/',
   plugins: [react()],
   build: { outDir: 'dist', sourcemap: true },
 })
