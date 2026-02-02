@@ -2,25 +2,25 @@ import React, { useEffect, useMemo, useState } from "react";
 
 /** ===== 카드 앞면 아이콘들 (매칭 대상만!) ===== */
 const ICONS = [
-  { key: "dog_happy", label: "강아지-웃음", src: "/icons/dog-smile.png" },
-  { key: "dog_wink", label: "강아지-윙크", src: "/icons/dog-wink.png" },
-  { key: "dog_surprise", label: "강아지-놀람", src: "/icons/dog-suprise.png" },
+  { key: "dog_happy", label: "강아지-웃음", src: "icons/dog-smile.png" },
+  { key: "dog_wink", label: "강아지-윙크", src: "icons/dog-wink.png" },
+  { key: "dog_surprise", label: "강아지-놀람", src: "icons/dog-suprise.png" },
 
-  { key: "cat_happy", label: "고양이-웃음", src: "/icons/cat-smile.png" },
-  { key: "cat_wink", label: "고양이-윙크", src: "/icons/cat-wink.png" },
-  { key: "cat_surprise", label: "고양이-놀람", src: "/icons/cat-suprise.png" },
+  { key: "cat_happy", label: "고양이-웃음", src: "icons/cat-smile.png" },
+  { key: "cat_wink", label: "고양이-윙크", src: "icons/cat-wink.png" },
+  { key: "cat_surprise", label: "고양이-놀람", src: "icons/cat-suprise.png" },
 
-  { key: "panda_happy", label: "팬더-웃음", src: "/icons/pander-smile.png" },
-  { key: "panda_wink", label: "팬더-윙크", src: "/icons/pander-wink.png" },
-  { key: "panda_surprise", label: "팬더-놀람", src: "/icons/pander-suprise.png" },
+  { key: "panda_happy", label: "팬더-웃음", src: "icons/pander-smile.png" },
+  { key: "panda_wink", label: "팬더-윙크", src: "icons/pander-wink.png" },
+  { key: "panda_surprise", label: "팬더-놀람", src: "icons/pander-suprise.png" },
 
-  { key: "frog_happy", label: "개구리-웃음", src: "/icons/frog-smile.png" },
-  { key: "frog_wink", label: "개구리-윙크", src: "/icons/frog-wink.png" },
-  { key: "frog_surprise", label: "개구리-놀람", src: "/icons/frog-suprise.png" },
+  { key: "frog_happy", label: "개구리-웃음", src: "icons/frog-smile.png" },
+  { key: "frog_wink", label: "개구리-윙크", src: "icons/frog-wink.png" },
+  { key: "frog_surprise", label: "개구리-놀람", src: "icons/frog-suprise.png" },
 ];
 
 /** ===== 카드 뒷면 이미지 ===== */
-const HIDDEN_CARD_SRC = "/icons/hidden_card.png";
+const HIDDEN_CARD_SRC = "icons/hidden_card.png";
 
 /** ===== 유틸 ===== */
 const shuffle = (arr) => {
